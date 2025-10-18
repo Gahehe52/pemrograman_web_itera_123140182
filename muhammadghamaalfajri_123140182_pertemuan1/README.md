@@ -10,14 +10,14 @@
 
 ## 📖 Deskripsi
 
-**Aplikasi Manajemen Tugas Mahasiswa** adalah web application sederhana namun powerful yang dirancang khusus untuk membantu mahasiswa mengorganisir tugas-tugas kuliah mereka. Aplikasi ini menggunakan teknologi web modern dan menyimpan data secara lokal menggunakan localStorage, sehingga data tugas tetap tersimpan meskipun browser ditutup.
+**Aplikasi Manajemen Tugas Mahasiswa** adalah web application sederhana yang dirancang untuk membantu mahasiswa mengorganisir tugas-tugas kuliah mereka. Aplikasi ini menggunakan teknologi web modern dan menyimpan data secara lokal menggunakan localStorage, sehingga data tugas tetap tersimpan meskipun browser ditutup.
 
 ### 🎯 Tujuan Aplikasi
 
 - Memudahkan mahasiswa melacak deadline tugas
 - Mengorganisir tugas berdasarkan mata kuliah
-- Menampilkan statistik tugas yang perlu diselesaikan
-- Memberikan peringatan untuk tugas yang mendekati deadline
+- Menampilkan urutan tugas berdasarkan deadline terdekat
+- Memberikan kalsifikasi tugas berdasarkan mata kuliah dan status penyelesaian
 - Menyediakan interface yang intuitif dan user-friendly
 
 ---
@@ -25,68 +25,60 @@
 ## ✨ Fitur Utama
 
 ### 1. **Manajemen Tugas (CRUD Operations)**
-- ➕ **Create**: Tambah tugas baru dengan detail lengkap
-- 📖 **Read**: Tampilkan semua tugas dalam daftar terorganisir
-- ✏️ **Update**: Tandai tugas sebagai selesai atau belum selesai
-- 🗑️ **Delete**: Hapus tugas yang sudah tidak diperlukan
+- **Create**: Tambah tugas baru dengan detail lengkap
+- **Read**: Tampilkan semua tugas dalam daftar terorganisir
+- **Update**: Tandai tugas sebagai selesai atau belum selesai
+- **Delete**: Hapus tugas yang sudah tidak diperlukan
 
 ### 2. **Sistem Penyimpanan Lokal**
-- 💾 Data disimpan menggunakan **localStorage**
-- 🔄 Data otomatis dimuat saat aplikasi dibuka
-- 📊 Data tetap tersimpan meskipun browser ditutup
-- ⚡ Update real-time setiap ada perubahan
+- Data disimpan menggunakan **localStorage**
+- Data otomatis dimuat saat aplikasi dibuka
+- Data tetap tersimpan meskipun browser ditutup
+- Update real-time setiap ada perubahan
 
 ### 3. **Validasi Form Komprehensif**
-- ✅ Validasi nama tugas (minimal 3 karakter)
-- ✅ Validasi mata kuliah (minimal 3 karakter)
-- ✅ Validasi deadline (tidak boleh di masa lalu)
-- ⚡ Validasi real-time saat mengetik
-- 🎯 Pesan error yang jelas dan informatif
+- Validasi nama tugas (minimal 3 karakter)
+- Validasi mata kuliah (minimal 3 karakter)
+- Validasi deadline (tidak boleh di masa lalu)
+- Validasi real-time saat mengetik
+- Pesan error yang jelas dan informatif
 
 ### 4. **Fitur Pencarian & Filter**
-- 🔍 **Pencarian**: Cari tugas berdasarkan nama atau mata kuliah
-- 📊 **Filter Status**: Tampilkan semua/selesai/belum selesai
-- 📚 **Filter Mata Kuliah**: Filter berdasarkan mata kuliah spesifik
-- 🎯 Kombinasi multiple filter untuk hasil lebih spesifik
+- **Pencarian**: Cari tugas berdasarkan nama atau mata kuliah
+- **Filter Status**: Tampilkan semua/selesai/belum selesai
+- **Filter Mata Kuliah**: Filter berdasarkan mata kuliah spesifik
+- Kombinasi multiple filter untuk hasil lebih spesifik
 
 ### 5. **Statistik & Dashboard**
-- 📈 Total jumlah tugas
-- ⏳ Jumlah tugas yang belum selesai
-- ✅ Jumlah tugas yang sudah selesai
-- 🔥 Label urgency (Deadline Hari Ini, Deadline Dekat, Terlambat)
-
-### 6. **User Interface Modern**
-- 🎨 Design modern dengan gradient color
-- 📱 Fully responsive (Desktop, Tablet, Mobile)
-- 🌈 Smooth animations dan transitions
-- 💡 Visual feedback untuk setiap aksi
-- 🎯 Empty state yang informatif
+- Total jumlah tugas
+- Jumlah tugas yang belum selesai
+- Jumlah tugas yang sudah selesai
+- Label urgency (Deadline Hari Ini, Deadline Dekat, Terlambat)
 
 ---
 
 ## 📸 Screenshots
 
 ### 1. Dashboard Utama
-![Dashboard](https://via.placeholder.com/800x450/667eea/ffffff?text=Dashboard+Utama+-+Statistik+dan+Form+Input)
+<img src="screenshot/Screenshot1.png">
+<img src="screenshot/Screenshot2.png">
 *Tampilan dashboard dengan statistik real-time dan form input tugas baru*
 
-### 2. Daftar Tugas & Filter
-![Daftar Tugas](https://via.placeholder.com/800x450/764ba2/ffffff?text=Daftar+Tugas+-+Filter+dan+Pencarian)
-*Fitur filter berdasarkan status dan mata kuliah, dengan pencarian tugas*
+### 2. Input Data
+<img src="screenshot/Screenshot3.png">
+<img src="screenshot/Screenshot4.png">
+*Contoh melakukan input data*
 
-### 3. Manajemen Tugas
-![Manajemen Tugas](https://via.placeholder.com/800x450/667eea/ffffff?text=Manajemen+Tugas+-+Edit+dan+Delete)
-*Tampilan tugas dengan status selesai/belum, tombol aksi, dan label urgency*
+### 3. Tandai Selesai
+<img src="screenshot/Screenshot5.png">
+<img src="screenshot/Screenshot6.png">
+*Jika ditandai selesai, maka statistik akan diupdate*
 
-### 4. Validasi Form
-![Validasi Form](https://via.placeholder.com/800x450/e74c3c/ffffff?text=Validasi+Form+-+Error+Messages)
-*Sistem validasi form dengan pesan error yang jelas*
-
-### 5. Responsive Mobile
-![Mobile View](https://via.placeholder.com/400x600/667eea/ffffff?text=Mobile+Responsive+View)
-*Tampilan responsive untuk perangkat mobile*
-
-> **Catatan**: Silakan ganti placeholder images di atas dengan screenshot aplikasi yang sebenarnya setelah aplikasi berjalan.
+### 4. Tes Klasifikasi Data
+<img src="screenshot/Screenshot7.png">
+<img src="screenshot/Screenshot8.png">
+<img src="screenshot/Screenshot9.png">
+*Data yang diinput akan diklasifikasikan berdasarkan mata kuliah dan status penyelesaian*
 
 ---
 
@@ -163,19 +155,8 @@
 - [x] Filter berdasarkan status
 - [x] Filter berdasarkan mata kuliah
 - [x] Statistik tugas real-time
-- [x] Sorting tugas berdasarkan deadline
+- [x] Sorting tugas berdasarkan deadline (otomatis)
 - [x] Label urgency untuk deadline
-- [x] Penyimpanan data dengan localStorage
-- [x] Responsive design untuk semua device
-- [x] Empty state yang informatif
-- [x] Smooth animations dan transitions
-
-### Fitur Keamanan 🔒
-
-- [x] XSS Prevention (escape HTML)
-- [x] Input validation di client-side
-- [x] Error handling untuk localStorage
-- [x] Konfirmasi sebelum menghapus data
 
 ---
 
@@ -462,38 +443,3 @@ taskList.innerHTML = `
 localStorage.setItem('tasks', '[{...}, {...}]');     // Array of tasks
 localStorage.setItem('taskIdCounter', '5');          // Next available ID
 ```
-
----
-
-## 🎯 Best Practices yang Diterapkan
-
-### 1. **Code Organization**
-- ✅ Separation of concerns (HTML/CSS/JS terpisah)
-- ✅ Modular functions dengan single responsibility
-- ✅ Descriptive variable dan function names
-- ✅ JSDoc comments untuk dokumentasi
-
-### 2. **Error Handling**
-- ✅ Try-catch blocks untuk localStorage operations
-- ✅ Fallback values jika data corrupt
-- ✅ User-friendly error messages
-- ✅ Console logging untuk debugging
-
-### 3. **User Experience**
-- ✅ Real-time validation feedback
-- ✅ Smooth animations dan transitions
-- ✅ Loading states (jika diperlukan)
-- ✅ Confirmation dialogs untuk destructive actions
-- ✅ Empty states yang informatif
-
-### 4. **Performance**
-- ✅ Efficient DOM manipulation
-- ✅ Event delegation where appropriate
-- ✅ Minimal reflows dan repaints
-- ✅ Debouncing untuk search input (bisa ditambahkan)
-
-### 5. **Accessibility**
-- ✅ Semantic HTML elements
-- ✅ Proper form labels
-- ✅ Keyboard navigation support
-- ✅ ARIA attributes (bisa ditingkatkan)
