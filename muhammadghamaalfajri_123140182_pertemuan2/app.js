@@ -439,18 +439,12 @@ class InventoryApp {
         });
     }
 
-    // Show notification (simple alert, bisa dikembangkan dengan toast notification)
     showNotification(message, type) {
-        // Untuk saat ini menggunakan alert
-        // Bisa dikembangkan dengan custom toast notification
         console.log(`[${type.toUpperCase()}] ${message}`);
     }
 }
 
-// ==========================================
-// INITIALIZE APPLICATION
-// ==========================================
-// Tunggu hingga DOM loaded, kemudian initialize app
 document.addEventListener('DOMContentLoaded', () => {
     const app = new InventoryApp();
+
 });
