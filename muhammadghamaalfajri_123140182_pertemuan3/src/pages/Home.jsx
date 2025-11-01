@@ -23,8 +23,10 @@ export default function HomePage() {
         onDone={handleDoneEditing} 
       />
       
-      <div className="p-6 bg-white rounded-lg shadow-md">
-        <h2 className="text-2xl font-semibold mb-4 text-gray-800">Daftar Bukumu</h2>
+      {/* PERUBAHAN: Ganti shadow-md menjadi shadow */}
+      <div className="p-6 bg-white rounded-lg shadow">
+        {/* PERUBAHAN: Ganti warna teks header */}
+        <h2 className="text-2xl font-semibold mb-4 text-sky-800">Daftar Bukumu</h2>
         <BookFilter />
         <BookList onEditClick={handleEditClick} />
       </div>

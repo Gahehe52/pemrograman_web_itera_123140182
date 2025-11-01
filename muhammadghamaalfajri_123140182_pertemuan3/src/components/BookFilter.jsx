@@ -6,7 +6,8 @@ export default function BookFilter() {
   const { filter, setFilter, searchTerm, setSearchTerm } = useBooks();
 
   return (
-    <div className="mb-6 p-4 bg-gray-100 rounded-lg shadow-inner">
+    // PERUBAHAN: Ganti bg-gray-100 menjadi bg-sky-50
+    <div className="mb-6 p-4 bg-sky-50 rounded-lg shadow-inner">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {/* Input Pencarian */}
         <div>
@@ -19,7 +20,8 @@ export default function BookFilter() {
             placeholder="Cth: Laskar Pelangi..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+            // PERUBAHAN: Ganti warna border/ring
+            className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500"
           />
         </div>
         
@@ -36,10 +38,11 @@ export default function BookFilter() {
                 <button
                   key={status}
                   onClick={() => setFilter(status)}
+                  // PERUBAHAN: Ganti warna tombol aktif dan non-aktif
                   className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
                     isActive 
-                      ? 'bg-blue-600 text-white shadow-md' 
-                      : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-300'
+                      ? 'bg-sky-600 text-white shadow-md' 
+                      : 'bg-white text-sky-700 hover:bg-sky-100 border border-sky-200'
                   }`}
                 >
                   {text}

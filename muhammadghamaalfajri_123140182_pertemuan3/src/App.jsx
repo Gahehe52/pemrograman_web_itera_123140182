@@ -12,14 +12,16 @@ export default function App() {
     <BookProvider>
       {/* 2. Atur Router */}
       <BrowserRouter>
-        <div className="bg-gray-100 min-h-screen font-sans">
+        {/* PERUBAHAN: Latar belakang utama diubah menjadi biru langit yang lembut */}
+        <div className="bg-sky-50 min-h-screen font-sans">
           <div className="container mx-auto max-w-4xl p-4 sm:p-8">
             
             <header className="text-center mb-8">
-              <h1 className="text-4xl font-bold text-gray-800">
+              {/* PERUBAHAN: Warna teks header diubah */}
+              <h1 className="text-4xl font-bold text-sky-800">
                 Manajemen Buku Pribadi
               </h1>
-              <p className="text-lg text-gray-600 mt-2">
+              <p className="text-lg text-sky-600 mt-2">
                 Catat koleksi bacaanmu di satu tempat.
               </p>
             </header>
@@ -35,7 +37,8 @@ export default function App() {
               </Routes>
             </main>
 
-            <footer className="text-center mt-12 text-gray-500 text-sm">
+            {/* PERUBAHAN: Warna teks footer diubah */}
+            <footer className="text-center mt-12 text-sky-500 text-sm">
               Dibuat dengan React & Tailwind CSS
             </footer>
           </div>
@@ -44,3 +47,4 @@ export default function App() {
     </BookProvider>
   );
 }
+

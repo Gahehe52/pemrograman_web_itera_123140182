@@ -54,8 +54,10 @@ export default function BookForm({ bookToEdit, onDone }) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="mb-8 p-6 bg-white rounded-lg shadow-md">
-      <h2 className="text-2xl font-semibold mb-4 text-gray-800">
+    // PERUBAHAN: Ganti shadow-md menjadi shadow
+    <form onSubmit={handleSubmit} className="mb-8 p-6 bg-white rounded-lg shadow">
+      {/* PERUBAHAN: Ganti warna teks header */}
+      <h2 className="text-2xl font-semibold mb-4 text-sky-800">
         {isEditing ? 'Edit Buku' : 'Tambah Buku Baru'}
       </h2>
       <div className="space-y-4">
@@ -64,7 +66,8 @@ export default function BookForm({ bookToEdit, onDone }) {
           <label htmlFor="title" className="block text-sm font-medium text-gray-700">Judul</label>
           <input
             type="text" id="title" name="title" value={formData.title} onChange={handleChange}
-            className={`mt-1 block w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none ${ errors.title ? 'border-red-500' : 'border-gray-300' }`}
+            // PERUBAHAN: Ganti warna border/ring & shadow
+            className={`mt-1 block w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none ${ errors.title ? 'border-red-500' : 'border-gray-300 focus:ring-sky-500 focus:border-sky-500' }`}
           />
           {errors.title && <p className="mt-1 text-xs text-red-600">{errors.title}</p>}
         </div>
@@ -73,7 +76,8 @@ export default function BookForm({ bookToEdit, onDone }) {
           <label htmlFor="author" className="block text-sm font-medium text-gray-700">Penulis</label>
           <input
             type="text" id="author" name="author" value={formData.author} onChange={handleChange}
-            className={`mt-1 block w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none ${ errors.author ? 'border-red-500' : 'border-gray-300' }`}
+            // PERUBAHAN: Ganti warna border/ring & shadow
+            className={`mt-1 block w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none ${ errors.author ? 'border-red-500' : 'border-gray-300 focus:ring-sky-500 focus:border-sky-500' }`}
           />
           {errors.author && <p className="mt-1 text-xs text-red-600">{errors.author}</p>}
         </div>
@@ -82,7 +86,8 @@ export default function BookForm({ bookToEdit, onDone }) {
           <label htmlFor="status" className="block text-sm font-medium text-gray-700">Status</label>
           <select
             id="status" name="status" value={formData.status} onChange={handleChange}
-            className="mt-1 block w-full px-3 py-2 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none"
+            // PERUBAHAN: Ganti warna border/ring & shadow
+            className="mt-1 block w-full px-3 py-2 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500"
           >
             <option value="milik">Dimiliki</option>
             <option value="baca">Sedang Dibaca</option>
@@ -92,11 +97,13 @@ export default function BookForm({ bookToEdit, onDone }) {
         {/* Tombol Submit */}
         <div className="flex justify-end gap-3">
           {isEditing && (
-            <button type="button" onClick={onDone} className="px-4 py-2 border border-gray-300 rounded-md text-sm font-medium">
+            // PERUBAHAN: Tombol batal lebih lembut
+            <button type="button" onClick={onDone} className="px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-50">
               Batal
             </button>
           )}
-          <button type="submit" className="px-4 py-2 bg-blue-600 text-white rounded-md text-sm font-medium hover:bg-blue-700">
+          {/* PERUBAHAN: Ganti warna tombol primer */}
+          <button type="submit" className="px-4 py-2 bg-sky-600 text-white rounded-md text-sm font-medium hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500">
             {isEditing ? 'Simpan Perubahan' : 'Simpan Buku'}
           </button>
         </div>
