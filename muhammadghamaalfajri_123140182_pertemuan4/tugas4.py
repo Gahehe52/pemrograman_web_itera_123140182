@@ -55,11 +55,11 @@ def rata_rata():
 while True:
     print("\nMenu:")
     print("1. Tampilkan Data")
-    print("2. Tambah Data Mahasiswa")
-    print("3. Mahasiswa Nilai Tertinggi")
-    print("4. Mahasiswa Nilai Terendah")
-    print("5. Filter Berdasarkan Grade")
-    print("6. Rata-rata Nilai Kelas")
+    print("2. Tambahkan Data Mahasiswa")
+    print("3. Tampilkan Mahasiswa dengan Nilai Tertinggi")
+    print("4. Tampilkan Mahasiswa dengan Nilai Terendah")
+    print("5. Filter Data Berdasarkan Grade")
+    print("6. Tampilkan Rata-rata Nilai Kelas")
     print("7. Keluar")
 
     pilih = input("Pilih menu: ")
@@ -81,3 +81,4 @@ while True:
         print(f"Rata-rata nilai kelas: {rata_rata():.2f}")
     elif pilih == "7":
         break
+
