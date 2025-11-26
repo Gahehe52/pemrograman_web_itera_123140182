@@ -1,0 +1,5 @@
+[console_scripts]
+initialize_pyramid_paw_db = pyramid_paw.scripts.initialize_db:main
+
+[paste.app_factory]
+main = pyramid_paw:main
